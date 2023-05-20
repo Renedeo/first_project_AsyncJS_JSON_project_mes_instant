@@ -1,0 +1,156 @@
+
+#m{
+    position: relative;
+    width: 100%;
+}
+#mes-label{
+    position: absolute;
+    left: 5px;
+    top: 50px;
+    font-weight: 700;
+    font-size: .8rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+#mes:placeholder-shown~
+#mes-label{
+    position: absolute;
+    left: 15px;
+    top: 5px;
+    font-size: 1rem;
+    visibility: visible;
+    opacity: 1;
+}
+
+#mes::placeholder{
+    color: transparent;
+}
+#mes{
+    resize: none;
+    width: 90%;
+    height: 100%;
+    padding: 10px;
+    margin-left: 1%;
+    border-radius: 20px;
+    outline: invert;
+    border: none;
+}
+
+#send-button{
+    border: none;
+    text-align: center;
+    font-size: .2rem;
+    background-color: rgb(6, 50, 52);
+    cursor: pointer;
+    color: whitesmoke;
+    width: 50px;
+    height: 50px;
+    border-radius: 3rem;
+    padding: 0;
+    margin-right: 2%;
+}
+#send-button:hover{    
+    color:rgb(28, 154, 157);
+}
+
+
+#receiver{
+    overflow: scroll;
+    font-size: 1.2rem;
+    color:rgb(4, 52, 53);
+}
+/* ---------------------------------------------
+        GESTION DU STYLE DES MESSAGES
+------------------------------------------------ */
+
+.id-usr, 
+.dialog-other {
+    text-align: right;
+    margin-right: 20px;
+}
+.id-usr{
+    margin-right: 10px;
+    
+}
+.id-other, 
+.dialog-usr {
+    text-align: left;
+    margin-left: 20px;
+}
+.id-other{
+    margin-left: 10px;
+}
+
+.dialog{
+    padding-top: 8px;
+    outline: antiquewhite;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(4px);
+    overflow-wrap: break-word;
+    font-size: medium;
+    
+}
+.dialog-usr{
+    box-shadow: 0 0 32px 0 rgba(34, 45, 197, 0.37);
+    padding-left: 5px;
+    padding-right: 50px;
+    padding-bottom: 5px;
+}
+.dialog-other{
+    box-shadow: 0 8px 32px 0 rgba(34, 45, 197, 0.37);
+    padding-right: 5px;
+    padding-left: 50px;
+    padding-bottom: 5px;
+    
+}
+.dialog:last-child{
+    margin-bottom: 10px;
+}
+
+.heure,
+.date{
+    font-size: xx-small;
+    position: absolute;
+    top: 0px;
+}
+.date-other,
+.heure-other{
+    left: 10px;
+}
+.date-usr,
+.heure-usr{
+    right: 10px;
+}
+
+
+/* -----------------------------------------
+    Sticky Content
+---------------------------------------------*/
+.date-mes{
+    position: sticky;
+    font-size: small;
+    top: 0;
+    z-index: 10;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 2px solid #ccc;
+    box-shadow: 0 8px 10px 0 rgba(34, 45, 197, 0.37);
+}
+
+.id-other, 
+.id-usr{
+    position: sticky;
+    top: 20px;
+    background-color: rgb(59, 139, 141);
+    backdrop-filter: blur(4px);
+    z-index: 10;
+}
+
+/* ----------------------------------------------
+    Family Content
+------------------------------------------------- */
+.family{
+    font-size: xx-small;
+}

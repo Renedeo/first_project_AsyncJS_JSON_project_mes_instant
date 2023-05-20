@@ -1,0 +1,51 @@
+li{
+  margin: 0 auto;
+}
+.bi{
+  font-size: 2rem;
+}
+
+ul{
+  padding: 0;
+}
+
+li {
+  position: relative;
+  list-style: none;
+  /* display: inline-block; */
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  text-align: left;
+  border: 2px solid #ccc;
+  background-color: #f1f1f1;
+  padding: 0 5px;
+  color: #333;
+  text-decoration: none;
+  /* font-size: 16px; */
+  cursor: pointer;
+  border-radius: 4px;
+  transition: width .5s ease;
+}
+
+li:hover{
+  width: 120px;
+  background-color: rgb(165, 188, 208) ;
+}
+
+li > *{
+  vertical-align: middle;
+  display: inline-block;
+}
+
+#log-out:hover::after{
+  content: "Deconnexion";
+  font-size: small;
+  cursor: auto;
+}
+
+li:focus{
+  color: rgb(5, 60, 108)
+}
+
+
